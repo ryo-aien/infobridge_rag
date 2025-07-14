@@ -540,20 +540,12 @@
                     <!-- Status Details Tooltip -->
                     <div v-if="showStatusDetails" class="status-details">
                         <div class="status-detail-row">
-                            <span class="status-detail-label">Space:</span>
-                            <span class="status-detail-value">{{ spaceName }}</span>
-                        </div>
-                        <div class="status-detail-row">
                             <span class="status-detail-label">Status:</span>
                             <span class="status-detail-value">{{ getStatusText() }}</span>
                         </div>
                         <div class="status-detail-row">
                             <span class="status-detail-label">Runtime:</span>
                             <span class="status-detail-value">{{ spaceStatus.runtime || 'N/A' }}</span>
-                        </div>
-                        <div class="status-detail-row">
-                            <span class="status-detail-label">Last Check:</span>
-                            <span class="status-detail-value">{{ formatLastCheck() }}</span>
                         </div>
                     </div>
                 </div>
